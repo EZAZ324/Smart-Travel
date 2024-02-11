@@ -9,7 +9,49 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
+        .newsletter_container {
+            display: flex;
+            gap: 3rem;
+            /* margin-top: 100px; */
+            width: 90%;
+            margin: 0 auto;
+        }
 
+        .newsletter_container>div {
+            flex: 1;
+        }
+
+        .newsletter_description_container {
+            padding: 3rem;
+            border: 1.5px solid #FF5400;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+
+        }
+
+        .newsletter_description_container form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .newsletter_description_container form input {
+            outline: none;
+            border: none;
+            background-color: rgba(19, 19, 24, 0.05);
+            padding: 0.9rem 2.1rem;
+            border-radius: 8px;
+        }
+
+        .newsletter_description_container form input:nth-child(3) {
+            background-color: #FF5400;
+        }
+
+        .newletter_image_container {
+            position: relative;
+        }    
     </style>
 </head>
 
@@ -65,30 +107,31 @@
     </header>
 
     <main>
+        <!-- newsletter starts here -->
         <section>
-            <div class="flex gap-10 my-20">
+            <div class="newsletter_container">
 
-                <div class="flex-1"><img src="Images/smart_travel.webp" alt="" class="w-full"></div>
-
-                <div class="flex-1 flex flex-col justify-center">
-                    <div class="grid gap-2 text-black text-[1.2rem]">
-                        <h2 class="text-center text-4xl text-green-800 font-extrabold mb-3">Smart Travel</h2>
-                        <p class="">Smart travel refers to the use of technology and innovative solutions to enhance the efficiency, convenience, and sustainability of travel experiences.
-                        </p>
-                        <p class="">
-
-                            <li>It encompasses various aspects such as advanced transportation systems, digital booking platforms, real-time navigation tools, smart luggage, and eco-friendly initiatives</li>
-                            <li> Smart travel aims to optimize travel processes, reduce environmental impact, improve safety, and enhance the overall traveler experience through the integration of smart technologies and data-driven solutions.</li>
-
-                        </p>
-                    </div>
-                    <div>
-                        <button class="btn btn-error white_text lg:text-lg">Read More</button>
-                    </div>
+                <div class="newsletter_description_container">
+                    <h4 class="text-black text-center text-4xl font-semibold">Newsletter</h4>
+                    <p class="text-center">Get your daily dose of travel news & tips. Sign up today!</p>
+                    <form action="">
+                        <input type="text" placeholder="Enter your name">
+                        <input type="email" placeholder="Enter your email">
+                        <input class="" type="submit" value="Subscribe">
+                    </form>
                 </div>
 
+                <div class="newletter_image_container">
+                    <img src="Images/newsletter.png" alt="" class="w-full">
+                </div>
             </div>
         </section>
+        <!-- newsletter ends here -->
+
+
+        <!-- map starts here -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d58364.43362632372!2d90.24912574245913!3d23.897521463740244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1707683014780!5m2!1sen!2sbd" class="w-full my-20" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- map ends here -->
     </main>
 
     <footer class="footer p-10 bg-neutral text-neutral-content">
