@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Travel</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .choose_destination_container {
+    margin-top: 100px;
+}
+
+.choose_destination_container p {
+    margin: 20px auto 50px auto;
+    width: 50%;
+    display: block;
+}
+
+.choose_destination_card_container .image_1 {
+    grid-area: image1;
+}
+
+.choose_destination_card_container .image_2 {
+    grid-area: image2;
+}
+
+.choose_destination_card_container .image_3 {
+    grid-area: image3;
+}
+
+.choose_destination_card_container .image_4 {
+    grid-area: image4;
+}
+
+.choose_destination_card_container .image_5 {
+    grid-area: image5;
+}
+
+.choose_destination_card_container .image_6 {
+    grid-area: image6;
+}
+
+.choose_destination_card_container .image_7 {
+    grid-area: image7;
+}
+
+.choose_destination_card_container {
+    display: grid;
+    grid-template-areas:
+        "image1 image1 image1 image1 image1 image2 image2 image2 image2 image2"
+        "image3 image3 image3 image4 image4 image4 image4 image4 image5 image5"
+        "image6 image6 image6 image6 image7 image7 image7 image7 image7 image7"
+    ;
+    gap: 20px;
+}
+
+.choose_destination_card_container div {
+    height: 50vmin;
+}
+.choose_destination_card_container div{
+    position: relative;
+}
+.destination_heading{
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 800;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+
+    <header class="h-28">
+
+        <!-- nav starts -->
+        <div class="navbar z-50 justify-between h-28 fixed bg-slate-100">
+            <div class=" lg:hidden">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li class="text-red-700 font-bold"><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Our Work</a></li>
+                        <li><a href="index.html">Team Member</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="index.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="">
+                <!-- <p class=" text-2xl text-[#424247] font-extrabold">Hockey<span class="text-red-600">’</span>s</p> -->
+                <img src="Images/log.png" alt="" class="w-24">
+            </div>
+
+            <div class="hidden lg:block text-lg text-[#424247]">
+                <nav>
+                    <ul class="flex gap-3">
+                        <li class="text-red-700 font-bold"><a href="index.html">Home</a></li>
+                        <li class="ml-6"><a href="index.html">Our Work</a></li>
+                        <li class="ml-6"><a href="index.html">Team Member</a></li>
+                        <li class="ml-6"><a href="gallery.html">Gallery</a></li>
+                        <li class="ml-6"><a href="index.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="mr-[2%]">
+                <button class="btn btn-error white_text lg:text-lg">Hire</button>
+            </div>
+        </div>
+        <!-- nav ends -->
+
+    </header>
+
+    <div class="text-center text-6xl"><p>Gallery</p></div>
+    <!-- <div><img src="Images/group.jpg" alt="" class="h-[500px]"></div> -->
+
+    <section>
+        <div class="choose_destination_container">
+            <div class="choose_destination_card_container">
+                <div class="image_1"><img src="Images/Rectangle 5.png" alt="">
+
+                </div>
+                <div class="image_2"><img src="Images/Rectangle 8.png" alt="">
+                </div>
+                <div class="image_3"><img src="Images/Rectangle 6.png" alt="">
+                </div>
+                <div class="image_4"><img src="Images/Rectangle 7.png" alt="">
+                </div>
+                <div class="image_5"><img src="Images/Rectangle 9.png" alt="">
+                </div>
+                <div class="image_6"><img src="Images/Rectangle 11.png" alt="">
+                </div>
+                <div class="image_7"><img src="Images/Rectangle 10.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
